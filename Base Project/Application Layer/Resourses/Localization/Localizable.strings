@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  Base Project
+
+  Created by Vladislav on 15.02.2020.
+  Copyright © 2020 Vladislav Markov. All rights reserved.
+*/
+
+// MARK: - Основное
+"OK" = "OK";
+"Cancel" = "Cancel";
+"Error" = "Error";
+"Logout" = "Logout";
+"Create" = "Create";
+"Cancel" = "Cancel";
+"Done" = "Done";
+"Play" = "Play";
+"Edit" = "Edit";
+"Skip" = "Skip";
