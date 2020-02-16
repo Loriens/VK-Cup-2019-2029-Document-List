@@ -41,7 +41,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		045EDC6523F83AD700770FFC /* Base Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Base Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		045EDC6523F83AD700770FFC /* VK Document List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VK Document List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		045EDC7423F83AD800770FFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		045EDC7623F83AD800770FFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		045EDC8023F83B2700770FFC /* CollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
@@ -90,7 +90,7 @@
 		045EDC5C23F83AD700770FFC = {
 			isa = PBXGroup;
 			children = (
-				045EDC6723F83AD700770FFC /* Base Project */,
+				045EDC6723F83AD700770FFC /* VK Document List */,
 				045EDC6623F83AD700770FFC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,12 +98,12 @@
 		045EDC6623F83AD700770FFC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				045EDC6523F83AD700770FFC /* Base Project.app */,
+				045EDC6523F83AD700770FFC /* VK Document List.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		045EDC6723F83AD700770FFC /* Base Project */ = {
+		045EDC6723F83AD700770FFC /* VK Document List */ = {
 			isa = PBXGroup;
 			children = (
 				045EDC8A23F83B2700770FFC /* Application Layer */,
@@ -112,7 +112,7 @@
 				045EDCA923F83B2700770FFC /* Presentation Layer */,
 				045EDC7D23F83B2700770FFC /* Service Layer */,
 			);
-			path = "Base Project";
+			path = "VK Document List";
 			sourceTree = "<group>";
 		};
 		045EDC7C23F83B2700770FFC /* Data Layer */ = {
@@ -305,9 +305,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		045EDC6423F83AD700770FFC /* Base Project */ = {
+		045EDC6423F83AD700770FFC /* VK Document List */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 045EDC7923F83AD800770FFC /* Build configuration list for PBXNativeTarget "Base Project" */;
+			buildConfigurationList = 045EDC7923F83AD800770FFC /* Build configuration list for PBXNativeTarget "VK Document List" */;
 			buildPhases = (
 				045EDC6123F83AD700770FFC /* Sources */,
 				045EDC6223F83AD700770FFC /* Frameworks */,
@@ -318,9 +318,9 @@
 			);
 			dependencies = (
 			);
-			name = "Base Project";
+			name = "VK Document List";
 			productName = "Base Project";
-			productReference = 045EDC6523F83AD700770FFC /* Base Project.app */;
+			productReference = 045EDC6523F83AD700770FFC /* VK Document List.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -338,7 +338,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 045EDC6023F83AD700770FFC /* Build configuration list for PBXProject "Base Project" */;
+			buildConfigurationList = 045EDC6023F83AD700770FFC /* Build configuration list for PBXProject "VK Document List" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -351,7 +351,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				045EDC6423F83AD700770FFC /* Base Project */,
+				045EDC6423F83AD700770FFC /* VK Document List */,
 			);
 		};
 /* End PBXProject section */
@@ -559,7 +559,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TV76LZZGYZ;
-				INFOPLIST_FILE = "Base Project/Application Layer/Info.plist";
+				INFOPLIST_FILE = "VK Document List/Application Layer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -577,7 +577,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TV76LZZGYZ;
-				INFOPLIST_FILE = "Base Project/Application Layer/Info.plist";
+				INFOPLIST_FILE = "VK Document List/Application Layer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -592,7 +592,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		045EDC6023F83AD700770FFC /* Build configuration list for PBXProject "Base Project" */ = {
+		045EDC6023F83AD700770FFC /* Build configuration list for PBXProject "VK Document List" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				045EDC7723F83AD800770FFC /* Debug */,
@@ -601,7 +601,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		045EDC7923F83AD800770FFC /* Build configuration list for PBXNativeTarget "Base Project" */ = {
+		045EDC7923F83AD800770FFC /* Build configuration list for PBXNativeTarget "VK Document List" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				045EDC7A23F83AD800770FFC /* Debug */,
