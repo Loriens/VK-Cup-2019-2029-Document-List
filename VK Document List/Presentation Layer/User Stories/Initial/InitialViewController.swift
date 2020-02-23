@@ -98,7 +98,7 @@ extension InitialViewController: VKSdkDelegate {
 extension InitialViewController: VKSdkUIDelegate {
     
     func vkSdkShouldPresent(_ controller: UIViewController!) {
-        self.present(controller, animated: true, completion: nil)
+        router?.presentViewController(controller)
     }
     
     func vkSdkNeedCaptchaEnter(_ captchaError: VKError!) {
