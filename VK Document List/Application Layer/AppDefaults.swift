@@ -8,4 +8,10 @@
 
 import Foundation
 
-enum AppDefaults { }
+enum AppDefaults {
+    
+    enum Keychain {
+        static let vkUser = "keychainVkUser"
+    }
+    
+}

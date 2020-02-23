@@ -23,13 +23,20 @@ class InitialViewModel {
     // MARK: - Public functions
     public func auth(completion: @escaping (Error?) -> Void) {
         let vkPermissions = ["docs"]
-        VKSdk.wakeUpSession(vkPermissions) { state, error in
+        VKSdk.wakeUpSession(vkPermissions) { [weak self] state, error in
             guard error == nil else {
                 completion(error)
                 return
             }
             
             if state == .authorized {
+                guard let userId = VKSdk.accessToken()?.userId,
+                    let token = VKSdk.accessToken()?.accessToken,
+                    self?.keychainService.save(
+                        User(
+                            token: token,
+                            id: userId
+                        ), key: AppDefaults.Keychain.vkUser) ?? false else { return }
                 completion(nil)
             } else {
                 VKSdk.authorize(vkPermissions, with: [VKAuthorizationOptions.unlimitedToken, VKAuthorizationOptions.disableSafariController])

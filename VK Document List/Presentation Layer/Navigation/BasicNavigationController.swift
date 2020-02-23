@@ -31,6 +31,7 @@ class BasicNavigationController: UINavigationController {
         if #available(iOS 11, *) {
             navigationBar.prefersLargeTitles = false
         }
+        setTransparent()
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {

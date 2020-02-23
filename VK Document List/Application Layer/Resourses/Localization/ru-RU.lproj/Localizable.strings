@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  VK Document List
+
+  Created by Vladislav on 15.02.2020.
+  Copyright © 2020 Vladislav Markov. All rights reserved.
+*/
+
+// MARK: - Основное
+"OK" = "OK";
+"Cancel" = "Отмена";
+"Error" = "Ошибка";
+"Logout" = "Выход";
+"Create" = "Создать";
+"Cancel" = "Отмена";
+"Done" = "Готово";
+"Play" = "Играть";
+"Edit" = "Редактировать";
+"Skip" = "Пропустить";
+
+// MARK: - Список документов
+"DocumentListTitle" = "Документы";

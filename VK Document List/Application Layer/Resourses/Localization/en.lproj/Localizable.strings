@@ -17,3 +17,6 @@
 "Play" = "Play";
 "Edit" = "Edit";
 "Skip" = "Skip";
+
+// MARK: - Список документов
+"DocumentListTitle" = "Documents";
