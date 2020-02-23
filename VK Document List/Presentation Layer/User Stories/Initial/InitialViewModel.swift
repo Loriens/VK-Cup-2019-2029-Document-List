@@ -15,13 +15,26 @@ protocol InitialViewModelInput {
 class InitialViewModel {
 
     // MARK: - Props
+    private var keychainService = KeychainService()
 
     // MARK: - Initialization
     init() { }
 
     // MARK: - Public functions
-    public func auth(completion: (Error?) -> Void) {
-        
+    public func auth(completion: @escaping (Error?) -> Void) {
+        let vkPermissions = ["docs"]
+        VKSdk.wakeUpSession(vkPermissions) { state, error in
+            guard error == nil else {
+                completion(error)
+                return
+            }
+            
+            if state == .authorized {
+                completion(nil)
+            } else {
+                VKSdk.authorize(vkPermissions, with: [VKAuthorizationOptions.unlimitedToken, VKAuthorizationOptions.disableSafariController])
+            }
+        }
     }
 
 }

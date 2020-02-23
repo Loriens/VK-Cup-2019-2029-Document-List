@@ -12,7 +12,6 @@
 		045EDCB623F83B2700770FFC /* CollectionCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045EDC8123F83B2700770FFC /* CollectionCellModel.swift */; };
 		045EDCB723F83B2700770FFC /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045EDC8323F83B2700770FFC /* TableCell.swift */; };
 		045EDCB823F83B2700770FFC /* TableCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045EDC8423F83B2700770FFC /* TableCellModel.swift */; };
-		045EDCBB23F83B2700770FFC /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045EDC8B23F83B2700770FFC /* AppConfiguration.swift */; };
 		045EDCBC23F83B2700770FFC /* AppDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045EDC8C23F83B2700770FFC /* AppDefaults.swift */; };
 		045EDCBD23F83B2700770FFC /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045EDC8D23F83B2700770FFC /* AppManager.swift */; };
 		045EDCBE23F83B2700770FFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045EDC8E23F83B2700770FFC /* AppDelegate.swift */; };
@@ -51,7 +50,6 @@
 		045EDC8123F83B2700770FFC /* CollectionCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionCellModel.swift; sourceTree = "<group>"; };
 		045EDC8323F83B2700770FFC /* TableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
 		045EDC8423F83B2700770FFC /* TableCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableCellModel.swift; sourceTree = "<group>"; };
-		045EDC8B23F83B2700770FFC /* AppConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
 		045EDC8C23F83B2700770FFC /* AppDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDefaults.swift; sourceTree = "<group>"; };
 		045EDC8D23F83B2700770FFC /* AppManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
 		045EDC8E23F83B2700770FFC /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -179,7 +177,6 @@
 			isa = PBXGroup;
 			children = (
 				045EDC7623F83AD800770FFC /* Info.plist */,
-				045EDC8B23F83B2700770FFC /* AppConfiguration.swift */,
 				045EDC8C23F83B2700770FFC /* AppDefaults.swift */,
 				045EDC8E23F83B2700770FFC /* AppDelegate.swift */,
 				045EDC8D23F83B2700770FFC /* AppManager.swift */,
@@ -481,7 +478,6 @@
 				045EDCB823F83B2700770FFC /* TableCellModel.swift in Sources */,
 				045EDCBC23F83B2700770FFC /* AppDefaults.swift in Sources */,
 				0447DCD72402998D00AF8210 /* KeychainService.swift in Sources */,
-				045EDCBB23F83B2700770FFC /* AppConfiguration.swift in Sources */,
 				045EDCB623F83B2700770FFC /* CollectionCellModel.swift in Sources */,
 				045EDCD023F83B2700770FFC /* InitialViewModel.swift in Sources */,
 				045EDCC223F83B2700770FFC /* AppTheme.swift in Sources */,
@@ -643,7 +639,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "markov.vladislav.Base-Project";
+				PRODUCT_BUNDLE_IDENTIFIER = markov.vladislav.VKDocumentList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -663,7 +659,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "markov.vladislav.Base-Project";
+				PRODUCT_BUNDLE_IDENTIFIER = markov.vladislav.VKDocumentList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
