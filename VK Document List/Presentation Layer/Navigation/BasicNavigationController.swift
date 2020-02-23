@@ -28,7 +28,9 @@ class BasicNavigationController: UINavigationController {
     }
     
     private func setupUI() {
-        navigationBar.prefersLargeTitles = false
+        if #available(iOS 11, *) {
+            navigationBar.prefersLargeTitles = false
+        }
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
