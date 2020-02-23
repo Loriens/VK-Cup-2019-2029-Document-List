@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0447DCD72402998D00AF8210 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0447DCD62402998D00AF8210 /* KeychainService.swift */; };
 		045EDCB523F83B2700770FFC /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045EDC8023F83B2700770FFC /* CollectionCell.swift */; };
 		045EDCB623F83B2700770FFC /* CollectionCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045EDC8123F83B2700770FFC /* CollectionCellModel.swift */; };
 		045EDCB723F83B2700770FFC /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045EDC8323F83B2700770FFC /* TableCell.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0447DCD62402998D00AF8210 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
 		045EDC6523F83AD700770FFC /* VK Document List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VK Document List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		045EDC7423F83AD800770FFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		045EDC7623F83AD800770FFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -92,6 +94,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0447DCD52402997500AF8210 /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				0447DCD62402998D00AF8210 /* KeychainService.swift */,
+			);
+			path = Keychain;
+			sourceTree = "<group>";
+		};
 		045EDC5C23F83AD700770FFC = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +142,7 @@
 		045EDC7D23F83B2700770FFC /* Service Layer */ = {
 			isa = PBXGroup;
 			children = (
+				0447DCD52402997500AF8210 /* Keychain */,
 				045EDC7E23F83B2700770FFC /* Representable */,
 			);
 			path = "Service Layer";
@@ -323,7 +334,6 @@
 				EECC206BA65577CB7337BA5E /* Pods-VK Document List.debug.xcconfig */,
 				C2C97DCEC672B14F2675AA80 /* Pods-VK Document List.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -470,6 +480,7 @@
 				045EDCBD23F83B2700770FFC /* AppManager.swift in Sources */,
 				045EDCB823F83B2700770FFC /* TableCellModel.swift in Sources */,
 				045EDCBC23F83B2700770FFC /* AppDefaults.swift in Sources */,
+				0447DCD72402998D00AF8210 /* KeychainService.swift in Sources */,
 				045EDCBB23F83B2700770FFC /* AppConfiguration.swift in Sources */,
 				045EDCB623F83B2700770FFC /* CollectionCellModel.swift in Sources */,
 				045EDCD023F83B2700770FFC /* InitialViewModel.swift in Sources */,

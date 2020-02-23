@@ -6,6 +6,8 @@
 //  Copyright © 2020 Vladislav Markov. All rights reserved.
 //
 
+import VK_ios_sdk
+
 protocol InitialViewModelInput {
     func configure(with data: Any?)
 }
@@ -18,6 +20,9 @@ class InitialViewModel {
     init() { }
 
     // MARK: - Public functions
+    public func auth(completion: (Error?) -> Void) {
+        
+    }
 
 }
 
