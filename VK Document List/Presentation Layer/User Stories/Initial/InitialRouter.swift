@@ -6,7 +6,11 @@
 //  Copyright © 2020 Vladislav Markov. All rights reserved.
 //
 
-protocol InitialRouterInput { }
+import Foundation
+
+protocol InitialRouterInput {
+    func setDocumentListViewController()
+}
 
 class InitialRouter: InitialRouterInput {
     
@@ -14,6 +18,14 @@ class InitialRouter: InitialRouterInput {
     weak var viewController: InitialViewController?
     
     // MARK: - InitialRouterInput
+    func setDocumentListViewController() {
+        let vc = DocumentListConfigurator.create()
+        _ = DocumentListConfigurator.configure(with: vc)
+        
+        DispatchQueue.main.async {
+            self.viewController?.navigationController?.setViewControllers([vc], animated: true)
+        }
+    }
     
     // MARK: - Module functions
 }

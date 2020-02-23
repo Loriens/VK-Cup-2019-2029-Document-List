@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		0447DCD72402998D00AF8210 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0447DCD62402998D00AF8210 /* KeychainService.swift */; };
+		0447DCD92402A45400AF8210 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0447DCD82402A45400AF8210 /* AppConfiguration.swift */; };
+		0447DCE02402A84A00AF8210 /* DocumentListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0447DCDB2402A84A00AF8210 /* DocumentListViewModel.swift */; };
+		0447DCE12402A84A00AF8210 /* DocumentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0447DCDC2402A84A00AF8210 /* DocumentListViewController.swift */; };
+		0447DCE22402A84A00AF8210 /* DocumentListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0447DCDD2402A84A00AF8210 /* DocumentListConfigurator.swift */; };
+		0447DCE32402A84A00AF8210 /* DocumentListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0447DCDE2402A84A00AF8210 /* DocumentListRouter.swift */; };
+		0447DCE42402A84A00AF8210 /* DocumentListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0447DCDF2402A84A00AF8210 /* DocumentListViewController.xib */; };
 		045EDCB523F83B2700770FFC /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045EDC8023F83B2700770FFC /* CollectionCell.swift */; };
 		045EDCB623F83B2700770FFC /* CollectionCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045EDC8123F83B2700770FFC /* CollectionCellModel.swift */; };
 		045EDCB723F83B2700770FFC /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045EDC8323F83B2700770FFC /* TableCell.swift */; };
@@ -43,6 +49,12 @@
 
 /* Begin PBXFileReference section */
 		0447DCD62402998D00AF8210 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		0447DCD82402A45400AF8210 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		0447DCDB2402A84A00AF8210 /* DocumentListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentListViewModel.swift; sourceTree = "<group>"; };
+		0447DCDC2402A84A00AF8210 /* DocumentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentListViewController.swift; sourceTree = "<group>"; };
+		0447DCDD2402A84A00AF8210 /* DocumentListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentListConfigurator.swift; sourceTree = "<group>"; };
+		0447DCDE2402A84A00AF8210 /* DocumentListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentListRouter.swift; sourceTree = "<group>"; };
+		0447DCDF2402A84A00AF8210 /* DocumentListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DocumentListViewController.xib; sourceTree = "<group>"; };
 		045EDC6523F83AD700770FFC /* VK Document List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VK Document List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		045EDC7423F83AD800770FFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		045EDC7623F83AD800770FFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -98,6 +110,18 @@
 				0447DCD62402998D00AF8210 /* KeychainService.swift */,
 			);
 			path = Keychain;
+			sourceTree = "<group>";
+		};
+		0447DCDA2402A80C00AF8210 /* Document List */ = {
+			isa = PBXGroup;
+			children = (
+				0447DCDD2402A84A00AF8210 /* DocumentListConfigurator.swift */,
+				0447DCDE2402A84A00AF8210 /* DocumentListRouter.swift */,
+				0447DCDC2402A84A00AF8210 /* DocumentListViewController.swift */,
+				0447DCDF2402A84A00AF8210 /* DocumentListViewController.xib */,
+				0447DCDB2402A84A00AF8210 /* DocumentListViewModel.swift */,
+			);
+			path = "Document List";
 			sourceTree = "<group>";
 		};
 		045EDC5C23F83AD700770FFC = {
@@ -177,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				045EDC7623F83AD800770FFC /* Info.plist */,
+				0447DCD82402A45400AF8210 /* AppConfiguration.swift */,
 				045EDC8C23F83B2700770FFC /* AppDefaults.swift */,
 				045EDC8E23F83B2700770FFC /* AppDelegate.swift */,
 				045EDC8D23F83B2700770FFC /* AppManager.swift */,
@@ -285,6 +310,7 @@
 		045EDCAA23F83B2700770FFC /* User Stories */ = {
 			isa = PBXGroup;
 			children = (
+				0447DCDA2402A80C00AF8210 /* Document List */,
 				045EDCAB23F83B2700770FFC /* Initial */,
 			);
 			path = "User Stories";
@@ -402,6 +428,7 @@
 				045EDCC523F83B2700770FFC /* PT Root UI_Regular.otf in Resources */,
 				045EDCD423F83B2700770FFC /* InitialViewController.xib in Resources */,
 				045EDCC423F83B2700770FFC /* PT Root UI_Light.otf in Resources */,
+				0447DCE42402A84A00AF8210 /* DocumentListViewController.xib in Resources */,
 				045EDCC723F83B2700770FFC /* PT Root UI_Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -477,6 +504,7 @@
 				045EDCBD23F83B2700770FFC /* AppManager.swift in Sources */,
 				045EDCB823F83B2700770FFC /* TableCellModel.swift in Sources */,
 				045EDCBC23F83B2700770FFC /* AppDefaults.swift in Sources */,
+				0447DCE22402A84A00AF8210 /* DocumentListConfigurator.swift in Sources */,
 				0447DCD72402998D00AF8210 /* KeychainService.swift in Sources */,
 				045EDCB623F83B2700770FFC /* CollectionCellModel.swift in Sources */,
 				045EDCD023F83B2700770FFC /* InitialViewModel.swift in Sources */,
@@ -490,11 +518,15 @@
 				045EDCC323F83B2700770FFC /* PTRootUI.swift in Sources */,
 				045EDCC923F83B2700770FFC /* AppAssets.swift in Sources */,
 				045EDCCB23F83B2700770FFC /* UITableView+registerClass.swift in Sources */,
+				0447DCE12402A84A00AF8210 /* DocumentListViewController.swift in Sources */,
+				0447DCD92402A45400AF8210 /* AppConfiguration.swift in Sources */,
 				045EDCCD23F83B2700770FFC /* UIColor+hex.swift in Sources */,
 				045EDCD323F83B2700770FFC /* InitialConfigurator.swift in Sources */,
+				0447DCE32402A84A00AF8210 /* DocumentListRouter.swift in Sources */,
 				045EDCCC23F83B2700770FFC /* String+localized.swift in Sources */,
 				045EDCCF23F83B2700770FFC /* String+className.swift in Sources */,
 				045EDCB523F83B2700770FFC /* CollectionCell.swift in Sources */,
+				0447DCE02402A84A00AF8210 /* DocumentListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

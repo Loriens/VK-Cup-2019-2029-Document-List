@@ -17,7 +17,7 @@ class InitialViewController: UIViewController {
     var viewModel: InitialViewModel?
     var router: InitialRouterInput?
     
-    private var vkSdkInstance = VKSdk.initialize(withAppId: "6955732")
+    private var vkSdkInstance = VKSdk.initialize(withAppId: AppConfiguration.vkAppId)
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
@@ -42,6 +42,14 @@ extension InitialViewController {
         
         vkSdkInstance?.register(self)
         vkSdkInstance?.uiDelegate = self
+        
+        viewModel?.auth(completion: { [weak self] (error) in
+            guard error == nil else {
+                print(error?.localizedDescription as Any)
+                return
+            }
+            self?.authSucceeded()
+        })
     }
     
     func setupActions() { }
@@ -54,7 +62,13 @@ extension InitialViewController {
 extension InitialViewController { }
 
 // MARK: - Module functions
-extension InitialViewController { }
+extension InitialViewController {
+    
+    private func authSucceeded() {
+        router?.setDocumentListViewController()
+    }
+    
+}
 
 // MARK: - VKSdkDelegate
 extension InitialViewController: VKSdkDelegate {
@@ -65,12 +79,12 @@ extension InitialViewController: VKSdkDelegate {
     
     func vkSdkAccessAuthorizationFinished(with result: VKAuthorizationResult!) {
         guard result != nil else { return }
-        viewModel?.auth(completion: { (error) in
+        viewModel?.auth(completion: { [weak self] (error) in
             guard error == nil else {
                 print(error?.localizedDescription as Any)
                 return
             }
-            print("VK Auth is OK")
+            self?.authSucceeded()
         })
     }
     
