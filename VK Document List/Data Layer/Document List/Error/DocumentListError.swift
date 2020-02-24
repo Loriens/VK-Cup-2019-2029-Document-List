@@ -12,10 +12,13 @@ enum DocumentListError: Error, LocalizedError {
     
     case allLoaded
     case isLoading
+    case noInternetConnection
     case unknown(error: Error?)
     
     var errorDescription: String? {
         switch self {
+        case .noInternetConnection:
+            return "InternetConnectionError".localized
         case let .unknown(error):
             return error?.localizedDescription ?? "Error".localized
         default:

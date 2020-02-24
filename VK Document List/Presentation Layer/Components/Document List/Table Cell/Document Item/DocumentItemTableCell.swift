@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol DocumentItemTableCellOutput: AnyObject {
+    func documentItemMoreButtonPressed(with documentItem: DocumentItem)
+}
+
 class DocumentItemTableCell: TableCell {
     
     // MARK: - Outlets
@@ -16,13 +20,14 @@ class DocumentItemTableCell: TableCell {
     @IBOutlet private weak var moreButton: UIButton!
     @IBOutlet private weak var descriptionLabel: UILabel!
     
+    // MARK: - Props
+    weak var output: DocumentItemTableCellOutput?
+    
     // MARK: - Lifecycle
     override func layoutSubviews() {
         super.layoutSubviews()
         applyStyles()
     }
-    
-    // MARK: - Props
     
     // MARK: - Setup functions
     override func setupView() {
@@ -60,15 +65,20 @@ class DocumentItemTableCell: TableCell {
         default:
             break
         }
+        moreButton.setTitle("".localized, for: .normal)
+        
         applyStyles()
     }
     
-    func setupActions() { }
+    func setupActions() {
+        moreButton.addTarget(self, action: #selector(moreButtonPressed), for: .touchUpInside)
+    }
     
     func applyStyles() {
         previewImageView.apply(.roundedStyle(radius: 6))
         titleLabel.apply(.cellTitleStyle())
         descriptionLabel.apply(.cellDescriptionStyle())
+        moreButton.setImage(AppAssets.moreHorizontal16, for: .normal)
     }
     
     // MARK: - Module functions
@@ -76,4 +86,12 @@ class DocumentItemTableCell: TableCell {
 }
 
 // MARK: - Actions
-extension DocumentItemTableCell { }
+extension DocumentItemTableCell {
+    
+    @objc
+    func moreButtonPressed() {
+        guard let model = model as? DocumentItemCellModel else { return }
+        output?.documentItemMoreButtonPressed(with: model.documentItem)
+    }
+    
+}

@@ -61,6 +61,7 @@
 		04F8F3DE240416770019DC79 /* SafariRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F8F3D9240416770019DC79 /* SafariRouter.swift */; };
 		04F8F3DF240416770019DC79 /* SafariViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F8F3DA240416770019DC79 /* SafariViewController.xib */; };
 		04F8F3E12404222B0019DC79 /* Date+LocalCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F8F3E02404222B0019DC79 /* Date+LocalCalendar.swift */; };
+		04F8F3E424042CA70019DC79 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F8F3E324042CA70019DC79 /* Reachability.swift */; };
 		7D0E889F2C237DD21BE3A3EA /* Pods_VK_Document_List.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F31A81AF5271B2EC9B482EE5 /* Pods_VK_Document_List.framework */; };
 /* End PBXBuildFile section */
 
@@ -123,6 +124,7 @@
 		04F8F3D9240416770019DC79 /* SafariRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariRouter.swift; sourceTree = "<group>"; };
 		04F8F3DA240416770019DC79 /* SafariViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SafariViewController.xib; sourceTree = "<group>"; };
 		04F8F3E02404222B0019DC79 /* Date+LocalCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+LocalCalendar.swift"; sourceTree = "<group>"; };
+		04F8F3E324042CA70019DC79 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		C2C97DCEC672B14F2675AA80 /* Pods-VK Document List.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VK Document List.release.xcconfig"; path = "Target Support Files/Pods-VK Document List/Pods-VK Document List.release.xcconfig"; sourceTree = "<group>"; };
 		EECC206BA65577CB7337BA5E /* Pods-VK Document List.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VK Document List.debug.xcconfig"; path = "Target Support Files/Pods-VK Document List/Pods-VK Document List.debug.xcconfig"; sourceTree = "<group>"; };
 		F31A81AF5271B2EC9B482EE5 /* Pods_VK_Document_List.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VK_Document_List.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -281,6 +283,7 @@
 			isa = PBXGroup;
 			children = (
 				0447DCD52402997500AF8210 /* Keychain */,
+				04F8F3E224042C970019DC79 /* Reachability */,
 				045EDC7E23F83B2700770FFC /* Representable */,
 			);
 			path = "Service Layer";
@@ -476,6 +479,14 @@
 			path = Safari;
 			sourceTree = "<group>";
 		};
+		04F8F3E224042C970019DC79 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				04F8F3E324042CA70019DC79 /* Reachability.swift */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
 		262D4C4069FA7996C1A5B9E7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -653,6 +664,7 @@
 				045CC27624030A5400E90ED2 /* DocumentItemCellModel.swift in Sources */,
 				04F8F3DE240416770019DC79 /* SafariRouter.swift in Sources */,
 				045EDCC223F83B2700770FFC /* AppTheme.swift in Sources */,
+				04F8F3E424042CA70019DC79 /* Reachability.swift in Sources */,
 				045EDCD223F83B2700770FFC /* InitialRouter.swift in Sources */,
 				045EDCD523F83B2700770FFC /* BasicNavigationController.swift in Sources */,
 				045CC27324030A4500E90ED2 /* DocumentItemTableCell.swift in Sources */,

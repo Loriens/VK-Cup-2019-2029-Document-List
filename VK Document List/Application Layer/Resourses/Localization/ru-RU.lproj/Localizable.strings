@@ -20,3 +20,9 @@
 
 // MARK: - Список документов
 "DocumentListTitle" = "Документы";
+
+"DocumentListRenameDocumentItem" = "Переименовать";
+"DocumentListDeleteDocumentItem" = "Удалить документ";
+"DocumentListCancelAction" = "Отменить";
+
+"InternetConnectionError" = "Вероятно, соединение с Интернетом прервано.";

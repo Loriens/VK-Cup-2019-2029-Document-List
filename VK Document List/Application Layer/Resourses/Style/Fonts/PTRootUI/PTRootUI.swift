@@ -8,7 +8,6 @@
 
 import UIKit
 
-// TODO: - Change font to Roboto
 enum PTRootUI {
     case light
     case regular

@@ -20,3 +20,9 @@
 
 // MARK: - Список документов
 "DocumentListTitle" = "Documents";
+
+"DocumentListRenameDocumentItem" = "Rename";
+"DocumentListDeleteDocumentItem" = "Delete the document";
+"DocumentListCancelAction" = "Cancel";
+
+"InternetConnectionError" = "The Internet connection appears to be offline.";

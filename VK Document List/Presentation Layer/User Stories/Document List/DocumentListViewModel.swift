@@ -65,8 +65,39 @@ class DocumentListViewModel {
             "offset": offset,
             "owner_id": user.id
         ]
+        
+        guard Reachability.isConnectedToNetwork() else {
+            completion(.failure(.noInternetConnection))
+            return
+        }
         let request = VKApi.request(withMethod: "docs.get", andParameters: params)
         request?.execute(resultBlock: loadDataResult, errorBlock: loadDataError)
+    }
+    
+    public func renameItem(with documentItem: DocumentItem, completion: @escaping (Result<[TableCellModel], DocumentListError>) -> Void) {
+        guard Reachability.isConnectedToNetwork() else {
+            completion(.failure(.noInternetConnection))
+            return
+        }
+        completion(.failure(.unknown(error: nil)))
+    }
+    
+    public func deleteItem(with documentItem: DocumentItem, completion: @escaping (Result<[TableCellModel], DocumentListError>) -> Void) {
+        guard Reachability.isConnectedToNetwork() else {
+            completion(.failure(.noInternetConnection))
+            return
+        }
+        let params: [AnyHashable: Any] = [
+            "owner_id": documentItem.ownerId,
+            "doc_id": documentItem.id
+        ]
+        let request = VKApi.request(withMethod: "docs.delete", andParameters: params)
+        request?.execute(resultBlock: { [weak self] (_) in
+            self?.documentItems.removeAll(where: { $0.id == documentItem.id })
+            self?.makeCellModels(with: completion)
+        }, errorBlock: { error in
+            completion(.failure(.unknown(error: error)))
+        })
     }
 
 }
@@ -84,20 +115,20 @@ extension DocumentListViewModel {
         offset += items.count
         documentItems.append(contentsOf: items)
         
-        makeCellModels()
+        makeCellModels(with: loadDataCompletion)
     }
     
     private func loadDataError(error: Error?) {
         loadDataCompletion(.failure(.unknown(error: error)))
     }
     
-    private func makeCellModels(scrollToTop: Bool = false) {
+    private func makeCellModels(with completion: (Result<[TableCellModel], DocumentListError>) -> Void) {
         var models: [TableCellModel] = []
         
         let items = documentItems.sorted(by: { $0.date > $1.date })
         items.forEach({ models.append(DocumentItemCellModel($0)) })
         
-        loadDataCompletion(.success(models))
+        completion(.success(models))
     }
     
 }

@@ -16,7 +16,7 @@ extension Date {
         formatter.dateFormat = "d MMMM yyyy"
         formatter.locale = Locale.current
         
-        // Return Example: 1 Jan 1999
+        // Return Example: 1 January 1999
         return formatter.string(from: date)
     }
     

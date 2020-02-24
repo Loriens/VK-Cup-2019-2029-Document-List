@@ -31,6 +31,19 @@ class DocumentListViewController: UIViewController {
         applyStyles()
     }
     
+    // MARK: - Public functions
+    public func renameDocumentItem(with documentItem: DocumentItem) {
+        viewModel?.renameItem(with: documentItem, completion: { [weak self] (result) in
+            self?.loadDataResult(result)
+        })
+    }
+    
+    public func deleteDocumentItem(with documentItem: DocumentItem) {
+        viewModel?.deleteItem(with: documentItem, completion: { [weak self] (result) in
+            self?.loadDataResult(result)
+        })
+    }
+    
 }
 
 // MARK: - Setup functions
@@ -85,7 +98,8 @@ extension DocumentListViewController {
             }
         case let .failure(error):
             switch error {
-            case let .unknown(error):
+            case .unknown,
+                 .noInternetConnection:
                 router?.showError(error)
             default:
                 break
@@ -108,6 +122,7 @@ extension DocumentListViewController: UITableViewDataSource {
         if model is DocumentItemCellModel {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: model.cellIdentifier) as? DocumentItemTableCell else { return UITableViewCell() }
             cell.model = model
+            cell.output = self
             return cell
         }
         
@@ -136,6 +151,15 @@ extension DocumentListViewController: UITableViewDelegate {
                 self?.loadDataResult(result)
             })
         }
+    }
+    
+}
+
+// MARK: - DocumentItemTableCellOutput
+extension DocumentListViewController: DocumentItemTableCellOutput {
+    
+    func documentItemMoreButtonPressed(with documentItem: DocumentItem) {
+        router?.showDocumentItemMenu(with: documentItem)
     }
     
 }
