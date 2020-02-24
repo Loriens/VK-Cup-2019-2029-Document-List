@@ -65,7 +65,7 @@ extension InitialViewController { }
 extension InitialViewController {
     
     private func authSucceeded() {
-//        router?.setDocumentListViewController()
+        router?.setDocumentListViewController()
     }
     
 }
