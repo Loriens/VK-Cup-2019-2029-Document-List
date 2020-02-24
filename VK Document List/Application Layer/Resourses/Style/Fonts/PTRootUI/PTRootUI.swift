@@ -1,13 +1,14 @@
 //
 //  PTRootUI.swift
-//  Test Playground
+//  Base Project
 //
-//  Created by  Кирилл on 1/22/19.
-//  Copyright © 2019 AppCraft. All rights reserved.
+//  Created by Vladislav on 24.02.2020.
+//  Copyright © 2020 Vladislav Markov. All rights reserved.
 //
 
 import UIKit
 
+// TODO: - Change font to Roboto
 enum PTRootUI {
     case light
     case regular
@@ -36,6 +37,6 @@ enum PTRootUI {
                 return font
             }
             return UIFont.systemFont(ofSize: size, weight: .bold)
-        }        
+        }
     }
 }

@@ -9,23 +9,41 @@
 import Foundation
 
 struct DocumentItemResponse: Codable {
+    
+    // MARK: - Props
     var id: Int?
+    var ownerId: Int?
     var title: String?
     var ext: String?
     var url: String?
     var date: Int?
     var type: Int?
     
+    enum CodingKeys: String, CodingKey {
+        case id = "id"
+        case ownerId = "owner_id"
+        case title = "title"
+        case ext = "ext"
+        case url = "url"
+        case date = "date"
+        case type = "type"
+    }
+    
+    // MARK: - Public functions
     func defaultMapping() -> DocumentItem? {
         guard let id = id,
-            let type = type else { return nil }
+            let ownerId = ownerId,
+            let type = type,
+            let documentType = DocumentItemType(rawValue: type) else { return nil }
         
         let date = Date(timeIntervalSince1970: Double(self.date ?? 0))
         return DocumentItem(id: id,
+                            ownerId: ownerId,
                             title: title ?? "",
                             ext: ext ?? "",
                             url: url ?? "",
                             date: date,
-                            type: type)
+                            type: documentType)
     }
+    
 }

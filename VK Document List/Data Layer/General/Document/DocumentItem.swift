@@ -9,10 +9,14 @@
 import Foundation
 
 struct DocumentItem {
+    
+    // MARK: - Props
     var id: Int
+    var ownerId: Int
     var title: String
     var ext: String
     var url: String
     var date: Date
-    var type: Int
+    var type: DocumentItemType
+    
 }

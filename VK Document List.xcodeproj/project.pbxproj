@@ -14,6 +14,9 @@
 		0447DCE22402A84A00AF8210 /* DocumentListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0447DCDD2402A84A00AF8210 /* DocumentListConfigurator.swift */; };
 		0447DCE32402A84A00AF8210 /* DocumentListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0447DCDE2402A84A00AF8210 /* DocumentListRouter.swift */; };
 		0447DCE42402A84A00AF8210 /* DocumentListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0447DCDF2402A84A00AF8210 /* DocumentListViewController.xib */; };
+		045848152403CF4800647298 /* DocumentItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045848142403CF4800647298 /* DocumentItemType.swift */; };
+		045848192403D87900647298 /* StyleWrapper+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045848182403D87900647298 /* StyleWrapper+UILabel.swift */; };
+		0458481B2403D9C900647298 /* StyleWrapper+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0458481A2403D9C900647298 /* StyleWrapper+UIView.swift */; };
 		045CC2582402DBFB00E90ED2 /* UINavigationController+setTransparent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045CC2572402DBFB00E90ED2 /* UINavigationController+setTransparent.swift */; };
 		045CC2592402DC9200E90ED2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 045CC25B2402DC9200E90ED2 /* Localizable.strings */; };
 		045CC2602402EA4800E90ED2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045CC25F2402EA4800E90ED2 /* User.swift */; };
@@ -64,6 +67,9 @@
 		0447DCDD2402A84A00AF8210 /* DocumentListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentListConfigurator.swift; sourceTree = "<group>"; };
 		0447DCDE2402A84A00AF8210 /* DocumentListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentListRouter.swift; sourceTree = "<group>"; };
 		0447DCDF2402A84A00AF8210 /* DocumentListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DocumentListViewController.xib; sourceTree = "<group>"; };
+		045848142403CF4800647298 /* DocumentItemType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentItemType.swift; sourceTree = "<group>"; };
+		045848182403D87900647298 /* StyleWrapper+UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StyleWrapper+UILabel.swift"; sourceTree = "<group>"; };
+		0458481A2403D9C900647298 /* StyleWrapper+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StyleWrapper+UIView.swift"; sourceTree = "<group>"; };
 		045CC2572402DBFB00E90ED2 /* UINavigationController+setTransparent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+setTransparent.swift"; sourceTree = "<group>"; };
 		045CC25A2402DC9200E90ED2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		045CC25C2402DD0A00E90ED2 /* ru-RU */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ru-RU"; path = "ru-RU.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
@@ -157,6 +163,7 @@
 			children = (
 				045CC2622402FCF400E90ED2 /* DocumentItem.swift */,
 				045CC2642402FCFC00E90ED2 /* DocumentItemResponse.swift */,
+				045848142403CF4800647298 /* DocumentItemType.swift */,
 			);
 			path = Document;
 			sourceTree = "<group>";
@@ -335,6 +342,8 @@
 			children = (
 				045EDC9323F83B2700770FFC /* Stylable.swift */,
 				045EDC9423F83B2700770FFC /* StyleWrapper.swift */,
+				045848182403D87900647298 /* StyleWrapper+UILabel.swift */,
+				0458481A2403D9C900647298 /* StyleWrapper+UIView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -605,6 +614,8 @@
 				045EDCBE23F83B2700770FFC /* AppDelegate.swift in Sources */,
 				045EDCB723F83B2700770FFC /* TableCell.swift in Sources */,
 				045EDCBD23F83B2700770FFC /* AppManager.swift in Sources */,
+				0458481B2403D9C900647298 /* StyleWrapper+UIView.swift in Sources */,
+				045848152403CF4800647298 /* DocumentItemType.swift in Sources */,
 				045CC26D240302D300E90ED2 /* DocumentListError.swift in Sources */,
 				045EDCB823F83B2700770FFC /* TableCellModel.swift in Sources */,
 				045EDCBC23F83B2700770FFC /* AppDefaults.swift in Sources */,
@@ -615,6 +626,7 @@
 				045CC2582402DBFB00E90ED2 /* UINavigationController+setTransparent.swift in Sources */,
 				045CC2632402FCF400E90ED2 /* DocumentItem.swift in Sources */,
 				045EDCD023F83B2700770FFC /* InitialViewModel.swift in Sources */,
+				045848192403D87900647298 /* StyleWrapper+UILabel.swift in Sources */,
 				045CC27624030A5400E90ED2 /* DocumentItemCellModel.swift in Sources */,
 				045EDCC223F83B2700770FFC /* AppTheme.swift in Sources */,
 				045EDCD223F83B2700770FFC /* InitialRouter.swift in Sources */,

@@ -24,15 +24,28 @@
                             <constraint firstAttribute="width" constant="72" id="PTf-9W-GR9"/>
                         </constraints>
                     </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VhV-z0-2rB">
+                        <rect key="frame" x="100" y="13" width="176" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="5aY-US-wlV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="P4p-Gd-Asj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="FrR-PF-aSr"/>
+                    <constraint firstAttribute="trailing" secondItem="VhV-z0-2rB" secondAttribute="trailing" constant="44" id="HKd-aP-WJV"/>
                     <constraint firstItem="P4p-Gd-Asj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="Lt8-QE-ULG"/>
+                    <constraint firstItem="VhV-z0-2rB" firstAttribute="leading" secondItem="P4p-Gd-Asj" secondAttribute="trailing" constant="12" id="NTX-FN-tEa"/>
+                    <constraint firstItem="VhV-z0-2rB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="yBM-OL-K4O"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="previewImageView" destination="P4p-Gd-Asj" id="nYl-oq-q89"/>
+                <outlet property="titleLabel" destination="VhV-z0-2rB" id="5wJ-HK-pur"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="101.45089285714285"/>
         </tableViewCell>
