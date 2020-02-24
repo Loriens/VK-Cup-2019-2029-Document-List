@@ -10,6 +10,10 @@ import UIKit
 
 enum AppAssets {
     
+    static var vkLogo512: UIImage? {
+        return UIImage(named: "vk_logo_512")
+    }
+    
     static var moreHorizontal16: UIImage? {
         return UIImage(named: "more_horizontal_16")
     }
