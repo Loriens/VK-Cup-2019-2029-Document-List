@@ -33,17 +33,41 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htE-Px-ge6">
+                        <rect key="frame" x="272" y="18" width="48" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="ge0-Hm-ECo"/>
+                            <constraint firstAttribute="width" constant="48" id="ys3-ct-fAe"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lGz-8K-Zxb">
+                        <rect key="frame" x="100" y="36" width="176" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="zQN-cH-kLI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="htE-Px-ge6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="0tF-NT-NbO"/>
                     <constraint firstItem="P4p-Gd-Asj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="FrR-PF-aSr"/>
                     <constraint firstAttribute="trailing" secondItem="VhV-z0-2rB" secondAttribute="trailing" constant="44" id="HKd-aP-WJV"/>
                     <constraint firstItem="P4p-Gd-Asj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="Lt8-QE-ULG"/>
                     <constraint firstItem="VhV-z0-2rB" firstAttribute="leading" secondItem="P4p-Gd-Asj" secondAttribute="trailing" constant="12" id="NTX-FN-tEa"/>
+                    <constraint firstAttribute="trailing" secondItem="htE-Px-ge6" secondAttribute="trailing" id="QxH-SJ-f8j"/>
+                    <constraint firstItem="lGz-8K-Zxb" firstAttribute="trailing" secondItem="VhV-z0-2rB" secondAttribute="trailing" id="ial-Wz-vaO"/>
+                    <constraint firstItem="lGz-8K-Zxb" firstAttribute="top" secondItem="VhV-z0-2rB" secondAttribute="bottom" constant="3" id="kqj-IH-w01"/>
+                    <constraint firstItem="lGz-8K-Zxb" firstAttribute="leading" secondItem="VhV-z0-2rB" secondAttribute="leading" id="lJ3-pe-crt"/>
                     <constraint firstItem="VhV-z0-2rB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="yBM-OL-K4O"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="descriptionLabel" destination="lGz-8K-Zxb" id="FFT-V3-B5A"/>
+                <outlet property="moreButton" destination="htE-Px-ge6" id="irI-X6-UnV"/>
                 <outlet property="previewImageView" destination="P4p-Gd-Asj" id="nYl-oq-q89"/>
                 <outlet property="titleLabel" destination="VhV-z0-2rB" id="5wJ-HK-pur"/>
             </connections>

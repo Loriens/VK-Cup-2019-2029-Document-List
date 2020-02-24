@@ -94,8 +94,7 @@ extension DocumentListViewModel {
     private func makeCellModels(scrollToTop: Bool = false) {
         var models: [TableCellModel] = []
         
-        // TODO: - Add sorting
-        let items = documentItems
+        let items = documentItems.sorted(by: { $0.date > $1.date })
         items.forEach({ models.append(DocumentItemCellModel($0)) })
         
         loadDataCompletion(.success(models))

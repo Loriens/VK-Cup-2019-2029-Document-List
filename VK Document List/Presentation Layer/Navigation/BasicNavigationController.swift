@@ -31,7 +31,10 @@ class BasicNavigationController: UINavigationController {
         if #available(iOS 11, *) {
             navigationBar.prefersLargeTitles = false
         }
-        setTransparent()
+        navigationBar.backgroundColor = .white
+        navigationBar.shadowImage = UIImage()
+        navigationBar.setBackgroundImage(UIImage(), for: .default)
+
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {

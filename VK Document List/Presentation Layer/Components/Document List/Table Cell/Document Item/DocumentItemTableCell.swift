@@ -13,6 +13,8 @@ class DocumentItemTableCell: TableCell {
     // MARK: - Outlets
     @IBOutlet private weak var previewImageView: UIImageView!
     @IBOutlet private weak var titleLabel: UILabel!
+    @IBOutlet private weak var moreButton: UIButton!
+    @IBOutlet private weak var descriptionLabel: UILabel!
     
     // MARK: - Lifecycle
     override func layoutSubviews() {
@@ -32,6 +34,12 @@ class DocumentItemTableCell: TableCell {
         let doc = model.documentItem
         
         titleLabel.text = doc.title
+        var description = ""
+        if !doc.ext.isEmpty {
+            description += doc.ext.uppercased() + " · "
+        }
+        description += doc.date.toLocalDateString()
+        descriptionLabel.text = description
         switch doc.type {
         case .textDocuments:
             previewImageView.image = AppAssets.placeholderDocumentText72
@@ -60,6 +68,7 @@ class DocumentItemTableCell: TableCell {
     func applyStyles() {
         previewImageView.apply(.roundedStyle(radius: 6))
         titleLabel.apply(.cellTitleStyle())
+        descriptionLabel.apply(.cellDescriptionStyle())
     }
     
     // MARK: - Module functions

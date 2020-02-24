@@ -16,5 +16,13 @@ extension StyleWrapper where Element: UIView {
             view.clipsToBounds = true
         }
     }
+    
+    static func statusBarStyle(color: UIColor) -> StyleWrapper {
+        return .wrap { view in
+            let statusBarView = UIView(frame: UIApplication.shared.statusBarFrame)
+            statusBarView.backgroundColor = color
+            view.addSubview(statusBarView)
+        }
+    }
 
 }

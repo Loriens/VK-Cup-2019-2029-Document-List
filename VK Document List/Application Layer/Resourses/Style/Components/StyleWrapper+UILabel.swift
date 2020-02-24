@@ -16,4 +16,11 @@ extension StyleWrapper where Element: UILabel {
         }
     }
     
+    static func cellDescriptionStyle() -> StyleWrapper {
+        return .wrap { label in
+            label.font = PTRootUI.regular.font(size: 13.0)
+            label.textColor = AppTheme.documentDescriptionColor
+        }
+    }
+    
 }

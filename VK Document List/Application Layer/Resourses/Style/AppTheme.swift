@@ -10,9 +10,12 @@ import UIKit
 
 enum AppTheme {
     
-    // MARK: - Status bar style
-    public static var statusBarStyle: UIStatusBarStyle {
-        return .lightContent
+    static var statusBarStyle: UIStatusBarStyle {
+        return .default
+    }
+    
+    static var documentDescriptionColor: UIColor {
+        return UIColor(hex: "818C99")
     }
     
 }

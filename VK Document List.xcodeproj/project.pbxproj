@@ -17,7 +17,6 @@
 		045848152403CF4800647298 /* DocumentItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045848142403CF4800647298 /* DocumentItemType.swift */; };
 		045848192403D87900647298 /* StyleWrapper+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045848182403D87900647298 /* StyleWrapper+UILabel.swift */; };
 		0458481B2403D9C900647298 /* StyleWrapper+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0458481A2403D9C900647298 /* StyleWrapper+UIView.swift */; };
-		045CC2582402DBFB00E90ED2 /* UINavigationController+setTransparent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045CC2572402DBFB00E90ED2 /* UINavigationController+setTransparent.swift */; };
 		045CC2592402DC9200E90ED2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 045CC25B2402DC9200E90ED2 /* Localizable.strings */; };
 		045CC2602402EA4800E90ED2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045CC25F2402EA4800E90ED2 /* User.swift */; };
 		045CC2632402FCF400E90ED2 /* DocumentItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045CC2622402FCF400E90ED2 /* DocumentItem.swift */; };
@@ -56,6 +55,12 @@
 		045EDCD423F83B2700770FFC /* InitialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045EDCB023F83B2700770FFC /* InitialViewController.xib */; };
 		045EDCD523F83B2700770FFC /* BasicNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045EDCB223F83B2700770FFC /* BasicNavigationController.swift */; };
 		045EDCD823F83E2500770FFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045EDC7323F83AD800770FFC /* LaunchScreen.storyboard */; };
+		04F8F3DB240416770019DC79 /* SafariViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F8F3D6240416770019DC79 /* SafariViewModel.swift */; };
+		04F8F3DC240416770019DC79 /* SafariViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F8F3D7240416770019DC79 /* SafariViewController.swift */; };
+		04F8F3DD240416770019DC79 /* SafariConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F8F3D8240416770019DC79 /* SafariConfigurator.swift */; };
+		04F8F3DE240416770019DC79 /* SafariRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F8F3D9240416770019DC79 /* SafariRouter.swift */; };
+		04F8F3DF240416770019DC79 /* SafariViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F8F3DA240416770019DC79 /* SafariViewController.xib */; };
+		04F8F3E12404222B0019DC79 /* Date+LocalCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F8F3E02404222B0019DC79 /* Date+LocalCalendar.swift */; };
 		7D0E889F2C237DD21BE3A3EA /* Pods_VK_Document_List.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F31A81AF5271B2EC9B482EE5 /* Pods_VK_Document_List.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,7 +75,6 @@
 		045848142403CF4800647298 /* DocumentItemType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentItemType.swift; sourceTree = "<group>"; };
 		045848182403D87900647298 /* StyleWrapper+UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StyleWrapper+UILabel.swift"; sourceTree = "<group>"; };
 		0458481A2403D9C900647298 /* StyleWrapper+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StyleWrapper+UIView.swift"; sourceTree = "<group>"; };
-		045CC2572402DBFB00E90ED2 /* UINavigationController+setTransparent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+setTransparent.swift"; sourceTree = "<group>"; };
 		045CC25A2402DC9200E90ED2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		045CC25C2402DD0A00E90ED2 /* ru-RU */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ru-RU"; path = "ru-RU.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		045CC25D2402DD0A00E90ED2 /* ru-RU */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ru-RU"; path = "ru-RU.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -113,6 +117,12 @@
 		045EDCAF23F83B2700770FFC /* InitialConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialConfigurator.swift; sourceTree = "<group>"; };
 		045EDCB023F83B2700770FFC /* InitialViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InitialViewController.xib; sourceTree = "<group>"; };
 		045EDCB223F83B2700770FFC /* BasicNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicNavigationController.swift; sourceTree = "<group>"; };
+		04F8F3D6240416770019DC79 /* SafariViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariViewModel.swift; sourceTree = "<group>"; };
+		04F8F3D7240416770019DC79 /* SafariViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariViewController.swift; sourceTree = "<group>"; };
+		04F8F3D8240416770019DC79 /* SafariConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariConfigurator.swift; sourceTree = "<group>"; };
+		04F8F3D9240416770019DC79 /* SafariRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariRouter.swift; sourceTree = "<group>"; };
+		04F8F3DA240416770019DC79 /* SafariViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SafariViewController.xib; sourceTree = "<group>"; };
+		04F8F3E02404222B0019DC79 /* Date+LocalCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+LocalCalendar.swift"; sourceTree = "<group>"; };
 		C2C97DCEC672B14F2675AA80 /* Pods-VK Document List.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VK Document List.release.xcconfig"; path = "Target Support Files/Pods-VK Document List/Pods-VK Document List.release.xcconfig"; sourceTree = "<group>"; };
 		EECC206BA65577CB7337BA5E /* Pods-VK Document List.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VK Document List.debug.xcconfig"; path = "Target Support Files/Pods-VK Document List/Pods-VK Document List.debug.xcconfig"; sourceTree = "<group>"; };
 		F31A81AF5271B2EC9B482EE5 /* Pods_VK_Document_List.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VK_Document_List.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -396,10 +406,10 @@
 		045EDCA323F83B2700770FFC /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				04F8F3E02404222B0019DC79 /* Date+LocalCalendar.swift */,
 				045EDCA823F83B2700770FFC /* String+className.swift */,
 				045EDCA523F83B2700770FFC /* String+localized.swift */,
 				045EDCA623F83B2700770FFC /* UIColor+hex.swift */,
-				045CC2572402DBFB00E90ED2 /* UINavigationController+setTransparent.swift */,
 				045EDCA423F83B2700770FFC /* UITableView+registerClass.swift */,
 				045EDCA723F83B2700770FFC /* UIViewController+identifier.swift */,
 			);
@@ -419,6 +429,7 @@
 		045EDCAA23F83B2700770FFC /* User Stories */ = {
 			isa = PBXGroup;
 			children = (
+				04F8F3D3240416510019DC79 /* Safari */,
 				0447DCDA2402A80C00AF8210 /* Document List */,
 				045EDCAB23F83B2700770FFC /* Initial */,
 			);
@@ -451,6 +462,18 @@
 				045CC26E24030A2A00E90ED2 /* Document List */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		04F8F3D3240416510019DC79 /* Safari */ = {
+			isa = PBXGroup;
+			children = (
+				04F8F3D8240416770019DC79 /* SafariConfigurator.swift */,
+				04F8F3D9240416770019DC79 /* SafariRouter.swift */,
+				04F8F3D7240416770019DC79 /* SafariViewController.swift */,
+				04F8F3DA240416770019DC79 /* SafariViewController.xib */,
+				04F8F3D6240416770019DC79 /* SafariViewModel.swift */,
+			);
+			path = Safari;
 			sourceTree = "<group>";
 		};
 		262D4C4069FA7996C1A5B9E7 /* Frameworks */ = {
@@ -540,6 +563,7 @@
 				045EDCD423F83B2700770FFC /* InitialViewController.xib in Resources */,
 				045EDCC423F83B2700770FFC /* PT Root UI_Light.otf in Resources */,
 				0447DCE42402A84A00AF8210 /* DocumentListViewController.xib in Resources */,
+				04F8F3DF240416770019DC79 /* SafariViewController.xib in Resources */,
 				045CC27424030A4500E90ED2 /* DocumentItemTableCell.xib in Resources */,
 				045EDCC723F83B2700770FFC /* PT Root UI_Medium.otf in Resources */,
 			);
@@ -623,11 +647,11 @@
 				0447DCD72402998D00AF8210 /* KeychainService.swift in Sources */,
 				045EDCB623F83B2700770FFC /* CollectionCellModel.swift in Sources */,
 				045CC2602402EA4800E90ED2 /* User.swift in Sources */,
-				045CC2582402DBFB00E90ED2 /* UINavigationController+setTransparent.swift in Sources */,
 				045CC2632402FCF400E90ED2 /* DocumentItem.swift in Sources */,
 				045EDCD023F83B2700770FFC /* InitialViewModel.swift in Sources */,
 				045848192403D87900647298 /* StyleWrapper+UILabel.swift in Sources */,
 				045CC27624030A5400E90ED2 /* DocumentItemCellModel.swift in Sources */,
+				04F8F3DE240416770019DC79 /* SafariRouter.swift in Sources */,
 				045EDCC223F83B2700770FFC /* AppTheme.swift in Sources */,
 				045EDCD223F83B2700770FFC /* InitialRouter.swift in Sources */,
 				045EDCD523F83B2700770FFC /* BasicNavigationController.swift in Sources */,
@@ -635,15 +659,19 @@
 				045EDCCE23F83B2700770FFC /* UIViewController+identifier.swift in Sources */,
 				045EDCC023F83B2700770FFC /* Stylable.swift in Sources */,
 				045EDCD123F83B2700770FFC /* InitialViewController.swift in Sources */,
+				04F8F3DD240416770019DC79 /* SafariConfigurator.swift in Sources */,
 				045CC2652402FCFC00E90ED2 /* DocumentItemResponse.swift in Sources */,
 				045EDCC123F83B2700770FFC /* StyleWrapper.swift in Sources */,
+				04F8F3DB240416770019DC79 /* SafariViewModel.swift in Sources */,
 				045EDCC323F83B2700770FFC /* PTRootUI.swift in Sources */,
+				04F8F3E12404222B0019DC79 /* Date+LocalCalendar.swift in Sources */,
 				045EDCC923F83B2700770FFC /* AppAssets.swift in Sources */,
 				045EDCCB23F83B2700770FFC /* UITableView+registerClass.swift in Sources */,
 				0447DCE12402A84A00AF8210 /* DocumentListViewController.swift in Sources */,
 				0447DCD92402A45400AF8210 /* AppConfiguration.swift in Sources */,
 				045EDCCD23F83B2700770FFC /* UIColor+hex.swift in Sources */,
 				045CC269240300E300E90ED2 /* DocumentListResponse.swift in Sources */,
+				04F8F3DC240416770019DC79 /* SafariViewController.swift in Sources */,
 				045EDCD323F83B2700770FFC /* InitialConfigurator.swift in Sources */,
 				0447DCE32402A84A00AF8210 /* DocumentListRouter.swift in Sources */,
 				045EDCCC23F83B2700770FFC /* String+localized.swift in Sources */,

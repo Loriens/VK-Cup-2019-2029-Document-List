@@ -45,9 +45,11 @@ extension DocumentListViewController {
         tableView.registerCellNib(DocumentItemTableCell.self)
         tableView.separatorStyle = .none
         
-        viewModel?.reloadData(completion: { [weak self] (result) in
-            self?.loadDataResult(result)
-        })
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(reloadData), for: .valueChanged)
+        tableView.refreshControl = refreshControl
+        
+        reloadData()
     }
     
     func setupActions() { }
@@ -57,12 +59,24 @@ extension DocumentListViewController {
 }
 
 // MARK: - Actions
-extension DocumentListViewController { }
+extension DocumentListViewController {
+    
+    @objc
+    private func reloadData() {
+        viewModel?.reloadData(completion: { [weak self] (result) in
+            self?.loadDataResult(result)
+        })
+    }
+    
+}
 
 // MARK: - Module functions
 extension DocumentListViewController {
     
     private func loadDataResult(_ result: Result<[TableCellModel], DocumentListError>) {
+        DispatchQueue.main.async {
+            self.tableView.refreshControl?.endRefreshing()
+        }
         switch result {
         case let .success(cellModels):
             self.cellModels = cellModels
@@ -111,6 +125,7 @@ extension DocumentListViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let model = cellModels[indexPath.row] as? DocumentItemCellModel else { return }
+        router?.pushSafariViewController(with: model.documentItem)
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
