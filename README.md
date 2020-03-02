@@ -5,7 +5,7 @@ The implementation of the document list for [VK](https://vk.com) using VK API
 * iOS 10.0+
 * Xcode 11
 
-## Supported:
+## Supported
 * Authorization in VK
 * Open any documents
 * Delete a document
